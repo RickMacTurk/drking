@@ -87,10 +87,10 @@ class Footer extends HTMLElement {
                     <div class="resources-container">
                         <div class="resource">
                             <div class="resources-heading">External Resources</div>
-                            <div class="resources-item"><a href="http://www.familydoctor.org/">FamilyDoctor.Org</a></div>
-                            <div class="resources-item"><a href="http://www.Health.gov/">Health.Gov</a></div>
-                            <div class="resources-item"><a href="http://www.womenshealth.gov/">WomensHealth.Gov</a></div>
-                            <div class="resources-item"><a href="http://www.girlshealth.gov/">GirlsHealth.Gov</a></div>
+                            <div class="resources-item"><a href="https://familydoctor.org/" target="_blank">FamilyDoctor.Org</a></div>
+                            <div class="resources-item"><a href="https://health.gov/" target="_blank">Health.Gov</a></div>
+                            <div class="resources-item"><a href="https://womenshealth.gov/" target="_blank">WomensHealth.Gov</a></div>
+                            <div class="resources-item"><a href="https://opa.hhs.gov/adolescent-health" target="_blank">GirlsHealth.Gov</a></div>
                         </div>
                     </div>
                     <div class="resources-container">
