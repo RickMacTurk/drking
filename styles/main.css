@@ -227,9 +227,10 @@ footer {
 }
 
 .tab {
+    align-items: center;
+    display: flex;
     cursor: pointer;
-    padding-bottom: 10px;
-    text-align: center;
+    justify-content: center;
     width: 150px;
 }
 

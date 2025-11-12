@@ -22,7 +22,7 @@ class Header extends HTMLElement {
             <header>
                 <div class="header-container">
                     <div class="call-office">
-                        <div class="phone-img"><img src="images/site/smartphone.png" alt="Phone icon" height="20" width="20" /></div>
+                        <div class="phone-img"><img src="images/site/smartphone.svg" alt="Phone icon" height="20" width="20" /></div>
                         <div class="phone-number">(512) 346-7966</div>
                     </div>
                     <div class="header-buttons">
@@ -44,10 +44,26 @@ class Header extends HTMLElement {
                     </div>
                     <div class="nav-container">
                         <div class="tab-container">
-                            <div id="appointments" class="tab"><a class="tab-link" href="appointments.html">Appointments</a></div>
-                            <div id="insurance" class="tab"><a class="tab-link" href="insurance.html">Insurance</a></div>
-                            <div id="office-team" class="tab"><a class="tab-link" href="office-team.html">Office Team</a></div>
-                            <div id="our-policies" class="tab"><a class="tab-link" href="our-policies.html">Our Policies</a></div>
+                            <div id="home" class="tab">
+                                <img src="images/site/home.svg" alt="Home icon" height="18" width="18">&nbsp;
+                                <a class="tab-link" href="index.html">Home</a>
+                            </div>
+                            <div id="appointments" class="tab">
+                                <img src="images/site/appointments-icon.svg" alt="Appointments icon" height="18" width="18">&nbsp;
+                                <a class="tab-link" href="appointments.html">Appointments</a>
+                            </div>
+                            <div id="insurance" class="tab">
+                                <img src="images/site/insurance-icon.svg" alt="Insurance icon" height="18" width="18">&nbsp;
+                                <a class="tab-link" href="insurance.html">Insurance</a>
+                            </div>
+                            <div id="office-team" class="tab">
+                                <img src="images/site/team-icon.svg" alt="Team icon" height="18" width="18">&nbsp;
+                                <a class="tab-link" href="office-team.html">Office Team</a>
+                            </div>
+                            <div id="our-policies" class="tab">
+                                <img src="images/site/policies-icon.svg" alt="Policies icon" height="18" width="18">&nbsp;
+                                <a class="tab-link" href="our-policies.html">Our Policies</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
