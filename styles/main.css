@@ -256,6 +256,11 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
+.two-columns-services {
+    display: grid;
+    grid-template-columns: auto 800px;
+}
+
 .full {
     height: 100%;
     width: 100%;
@@ -264,6 +269,17 @@ footer {
 .justify-center {
     display: flex;
     justify-content: center;
+}
+
+.group--img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.map {
+    height: 500px;
+    width: 100%;
 }
 
 .stock-image {
@@ -277,8 +293,8 @@ footer {
 }
 
 .stock-image-group {
-    height: 600px;
-    width: 750px;
+    height: 528px;
+    width: 800px;
 }
 
 .stock-image-appt {
