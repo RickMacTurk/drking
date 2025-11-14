@@ -42,7 +42,7 @@ class Header extends HTMLElement {
                 </div>
                 <nav>
                     <div class="logo">
-                        <a class="tab-link" href="/">
+                        <a class="tab-link" href="index.html">
                             <svg version="1.1" id="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80" height="80" viewBox="0 0 1634.3589 1621.8223" enable-background="new 0 0 1634.3589 1621.8223" xml:space="preserve">
                                 <g>
                                     <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M43.3653,815.9111"/>
