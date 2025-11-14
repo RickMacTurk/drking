@@ -1,0 +1,13 @@
+:root {
+    --main-header: #476f95;
+    --highlight-text: #448680;
+    --header: #7593af;
+    --logo: #7593af;
+    --footer: #448680;
+    --primary-text: #030303;
+    --secondary-text: #f4f4f4;
+    --button-color: #0f3050;
+    --button-background: #f4f4f4;
+    --button-background-hover: #ecf2fd;
+    --secondary-heading: #0f3050;
+}

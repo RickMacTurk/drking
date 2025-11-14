@@ -1,0 +1,27 @@
+/* :root {
+    --main-header: #fea302;
+    --highlight-text: #b90c2e;
+    --header: #b90c2e;
+    --logo: #013865;
+    --footer: #013865;
+    --primary-text: #030303;
+    --secondary-text: #f4f4f4;
+    --button-color: #b90c2e;
+    --button-background: #f4f4f4;
+    --button-background-hover: #ecf2fd;
+    --secondary-heading: #b90c2e;
+} */
+
+:root {
+    --main-header: #013865;
+    --highlight-text: #013865;
+    --header: #b90c2e;
+    --logo: #b90c2e;
+    --footer: #013865;
+    --primary-text: #030303;
+    --secondary-text: #f4f4f4;
+    --button-color: #013865;
+    --button-background: #f4f4f4;
+    --button-background-hover: #ecf2fd;
+    --secondary-heading: #b90c2e;
+}
