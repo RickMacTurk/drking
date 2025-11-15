@@ -202,7 +202,7 @@ footer {
 }
 
 .resources-heading {
-    color: var(--secondary-text);
+    color: var(--tertiary-text);
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 10px;
@@ -222,14 +222,14 @@ footer {
 }
 
 .footer {
-    color: var(--secondary-text);
+    color: var(--tertiary-text);
     font-size: 16px;
     padding-top: 5px;
     text-align: center;
 }
 
 .footer a {
-    color: var(--secondary-text);
+    color: var(--tertiary-text);
     text-decoration: none;
 }
 
