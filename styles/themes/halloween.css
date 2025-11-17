@@ -1,0 +1,14 @@
+ :root {
+    --main-header: #FF7518;
+    --highlight-text: #62632A;
+    --header: #F4831B;
+    --logo: #A0522D;
+    --footer: #FF7518;
+    --primary-text: #030303;
+    --secondary-text: #f4f4f4;
+    --button-color: #030303;
+    --button-background: #f4f4f4;
+    --button-background-hover: #ecf2fd;
+    --secondary-heading: #62632A;
+    --tertiary-text: #030303;
+}
