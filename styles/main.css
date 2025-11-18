@@ -276,6 +276,21 @@ footer {
     grid-template-columns: auto 800px;
 }
 
+.two-columns-mens-health {
+    display: grid;
+    grid-template-columns: auto 800px;
+}
+
+.two-columns-insurance {
+    display: grid;
+    grid-template-columns: auto 800px;
+}
+
+.two-columns-appt {
+    display: grid;
+    grid-template-columns: auto 800px;
+}
+
 .full {
     height: 100%;
     width: 100%;
@@ -302,9 +317,9 @@ footer {
     width: 100%;
 }
 
-.stock-image-medical {
-    height: 500px;
-    width: 100%;
+.stock-image-insurance {
+    height: 533px;
+    width: 800px;
 }
 
 .stock-image-group {
@@ -313,8 +328,13 @@ footer {
 }
 
 .stock-image-appt {
-    height: 500px;
-    width: 100%;
+    height: 533px;
+    width: 800px;
+}
+
+.stock-image-mens-health {
+    height: 800px;
+    width: 800px;
 }
 
 .align-right {
