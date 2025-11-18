@@ -12,3 +12,18 @@
     --secondary-heading: #62632A;
     --tertiary-text: #030303;
 }
+
+ :root {
+    --main-header: #FF7518;
+    --highlight-text: #62632A;
+    --header: #A0522D;
+    --logo: #62632A;
+    --footer: #FF7518;
+    --primary-text: #030303;
+    --secondary-text: #f4f4f4;
+    --button-color: #030303;
+    --button-background: #f4f4f4;
+    --button-background-hover: #ecf2fd;
+    --secondary-heading: #f4f4f4;
+    --tertiary-text: #62632A;
+}
