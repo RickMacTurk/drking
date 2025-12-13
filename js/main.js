@@ -1,5 +1,5 @@
 function handlePracticeFusion() {
-    window.open('https://www.patientfusion.com/doctor/susan-king-md-45784', '_blank');
+    window.open('appointments.html', '_self');
 }
 
 function handlePayments() {
