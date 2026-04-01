@@ -23,6 +23,204 @@ html, body {
     font-weight: normal;
     font-style: normal;
 }
+/* Mobile devices (portrait and landscape) - max-width: 576px is one common breakpoint */
+@media (max-width: 576px) {
+    /* Styles for screens smaller than or equal to 576px */
+    .body {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    div.two-columns-services, div.two-columns-appt, div.two-columns-insurance, div.two-columns-mens-health {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    div.pr-20 > img {
+        display: none;
+    }
+
+    div.two-columns-mens-health > div > img {
+        display: none;
+    }
+
+    div.group-img {
+        display: none;
+    }
+
+    div > .team-image {
+        display: none;
+    }
+
+    div.tab-label {
+        display: none;
+    }
+
+    iframe.map {
+        display: none;
+    }
+
+    div.logo-text > .name {
+        font-size: 14px;
+    }
+
+    div.logo-text > .title {
+        font-size: 11px;
+    }
+
+    div.header-container > .header-buttons > .button-primary {
+        display: none;
+    }
+
+    div.logo-primary {
+        display: none;
+    }
+
+    div.logo-secondary {
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+
+    div.logo-secondary > .tab-link {
+        display: none;
+    }
+
+    div.logo-secondary > .logo-text {
+        padding-left: 5px;
+        align-items: flex-start;
+    }
+
+    div.button-secondary {
+        display: flex;
+        cursor: pointer;
+    }
+
+    div.tab-container {
+        column-gap: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 5px;
+    }
+
+    div.tab {
+        width: 30px;
+    }
+
+    .tab {
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-end;
+        width: 20px;
+    }
+
+    .tab:hover {
+        border-bottom: 2px solid var(--secondary-text);
+    }
+
+    div.header-container {
+        align-items: center;
+        background-color: var(--header);
+        color: var(--secondary-text);
+        display: flex;
+        height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        column-gap: 10px;
+        justify-content: space-between;
+    }
+
+    div.resources-wrapper-primary {
+        display: none;
+    }
+
+    div.resources-wrapper-secondary {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* Tablet devices (portrait) - min-width: 576px and max-width: 768px */
+@media (min-width: 576px) and (max-width: 1024px) {
+    /* Styles for screens between 576px and 1024px */
+    body {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    div.two-columns-services, div.two-columns-appt, div.two-columns-insurance, div.two-columns-mens-health {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    div.pr-20 > img {
+        display: none;
+    }
+
+    div.two-columns-mens-health > div > img {
+        display: none;
+    }
+
+    div.group-img {
+        display: none;
+    }
+
+    div.tab-label {
+        display: none;
+    }
+
+    div.tab-container {
+        column-gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 20px;
+    }
+
+    div.logo-secondary {
+        display: none;
+    }
+
+    div.tab {
+        width: 30px;
+    }
+
+    .tab {
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-end;
+        width: 20px;
+    }
+
+    .tab:hover {
+        border-bottom: 2px solid var(--secondary-text);
+    }
+
+    div.header-container {
+        align-items: center;
+        background-color: var(--header);
+        color: var(--secondary-text);
+        display: flex;
+        height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        column-gap: 10px;
+        justify-content: space-between;
+    }
+
+    div.resources-wrapper-secondary {
+        display: none;
+    }
+}
 
 main {
     padding: 20px;
@@ -103,11 +301,15 @@ h2, h3 {
     padding-right: 20px;
 }
 
-.logo {
+.logo-primary {
     align-items: center;
     display: flex;
     width: 100%;
     padding-left: 20px;
+}
+
+.logo-secondary {
+    display: none;
 }
 
 .logo-text {
@@ -146,6 +348,10 @@ h2, h3 {
     flex-direction: row;
 }
 
+.button-secondary {
+    display: none;
+}
+
 .button-primary {
     display: flex;
     align-items: center;
@@ -167,6 +373,8 @@ h2, h3 {
 }
 
 .tab-link {
+    display: flex;
+    align-items: center;
     color: var(--secondary-text);
     text-decoration: none;
 }
@@ -175,7 +383,7 @@ svg polygon {
     fill: var(--logo);
 }
 
-.donload-icon svg path {
+.download-icon svg path {
     stroke: var(--highlight-text) !important;
 }
 
@@ -191,9 +399,13 @@ footer {
     flex-direction: column;
 }
 
-.resources-wrapper {
+.resources-wrapper-primary {
     display: flex;
     justify-content: space-evenly;
+}
+
+.resources-wrapper-secondary {
+    display: none;
 }
 
 .resources-container {
@@ -307,7 +519,7 @@ footer {
     object-fit: contain;
 }
 
-.map {
+.map, .invoice {
     height: 500px;
     width: 100%;
 }
