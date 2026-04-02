@@ -145,6 +145,82 @@ html, body {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1280px) and (orientation: landscape) {
+  /* Styles for landscape tablets */
+    body {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    div.two-columns-services, div.two-columns-appt, div.two-columns-insurance, div.two-columns-mens-health {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    div.pr-20 > img {
+        display: none;
+    }
+
+    div.two-columns-mens-health > div > img {
+        display: none;
+    }
+
+    div.group-img {
+        display: none;
+    }
+
+    div.tab-label {
+        display: none;
+    }
+
+    div.tab-container {
+        column-gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 20px;
+    }
+
+    div.logo-secondary {
+        display: none;
+    }
+
+    div.tab {
+        width: 30px;
+    }
+
+    .tab {
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-end;
+        width: 20px;
+    }
+
+    .tab:hover {
+        border-bottom: 2px solid var(--secondary-text);
+    }
+
+    div.header-container {
+        align-items: center;
+        background-color: var(--header);
+        color: var(--secondary-text);
+        display: flex;
+        height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        column-gap: 10px;
+        justify-content: space-between;
+    }
+
+    div.resources-wrapper-secondary {
+        display: none;
+    }
+}
+
 /* Tablet devices (portrait) - min-width: 576px and max-width: 768px */
 @media (min-width: 576px) and (max-width: 1024px) {
     /* Styles for screens between 576px and 1024px */

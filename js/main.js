@@ -42,10 +42,10 @@ class Header extends HTMLElement {
                             </svg>
                             <span class="pl-5">Pay Invoice</span>
                         </button>
-                        <div class="button-secondary" onclick="handlePracticeFusion()">
+                        <div class="button-secondary" onclick="handlePracticeFusion()" title="Book Appointment" >
                             <img src="images/site/pf_24.png" alt="Book with Practice Fusion" height="24" width="24" />
                         </div>
-                        <div class="button-secondary" onclick="handlePayments()">
+                        <div class="button-secondary" onclick="handlePayments()" title="Pay Invoice" >
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z" stroke="var(--button-background)" stroke-width="1.5"/>
                                 <path d="M8 12H16" stroke="var(--button-background)" stroke-width="1.5" stroke-linecap="round"/>
@@ -90,31 +90,31 @@ class Header extends HTMLElement {
                         <div class="tab-container">
                             <div id="home" class="tab">
                                 <a class="tab-link" href="index.html">
-                                    <img src="images/site/home.svg" alt="Home icon" height="18" width="18">&nbsp;
+                                    <img src="images/site/home.svg" alt="Home icon" height="18" width="18" title="Home">&nbsp;
                                     <div class="tab-label">Home</div>
                                 </a>
                             </div>
                             <div id="appointments" class="tab">
                                 <a class="tab-link" href="appointments.html">
-                                    <img src="images/site/appointments-icon.svg" alt="Appointments icon" height="18" width="18">&nbsp;
+                                    <img src="images/site/appointments-icon.svg" alt="Appointments icon" height="18" width="18" title="Appointments">&nbsp;
                                     <div class="tab-label">Appointments</div>
                                 </a>
                             </div>
                             <div id="insurance" class="tab">
                                 <a class="tab-link" href="insurance.html">
-                                    <img src="images/site/insurance-icon.svg" alt="Insurance icon" height="18" width="18">&nbsp;
+                                    <img src="images/site/insurance-icon.svg" alt="Insurance icon" height="18" width="18" title="Insurance">&nbsp;
                                     <div class="tab-label">Insurance</div>
                                 </a>
                             </div>
                             <div id="office-team" class="tab">
                                 <a class="tab-link" href="office-team.html">
-                                    <img src="images/site/team-icon.svg" alt="Team icon" height="18" width="18">&nbsp;
+                                    <img src="images/site/team-icon.svg" alt="Team icon" height="18" width="18" title="Office Team">&nbsp;
                                     <div class="tab-label">Office Team</div>
                                 </a>
                             </div>
                             <div id="our-policies" class="tab">
                                 <a class="tab-link" href="our-policies.html">
-                                    <img src="images/site/policies-icon.svg" alt="Policies icon" height="18" width="18">&nbsp;
+                                    <img src="images/site/policies-icon.svg" alt="Policies icon" height="18" width="18" title="Our Policies">&nbsp;
                                     <div class="tab-label">Our Policies</div>
                                 </a>
                             </div>
