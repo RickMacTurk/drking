@@ -6,14 +6,12 @@ function handlePayments() {
     window.open('pay-invoice.html', '_self');
 }
 
-// If we want to do a breadcrumb
-function getPath() {
-    const home = '/drking/';
-    const currentPath = window.location.pathname;
-    const formattedPath = window.location.pathname.replace(home, '').replace('-', ' ').replace('.html', '');
-    const finalPath = (currentPath === home) ? '' : `-&nbsp;<a class="header-link" href="${currentPath}">${formattedPath}</a>`;
-    
-    return `<a class="header-link" href="${home}"><img src="images/site/home.png" alt="Home icon" height="18" width="18">&nbsp;Home</a>&nbsp;${finalPath}`;
+function handleOpenMenu() {
+    document.getElementById('menu-nav').style.display = "block";
+}
+
+function handleCloseMenu() {
+    document.getElementById('menu-nav').style.display = "none";
 }
 
 class Header extends HTMLElement {
@@ -73,7 +71,7 @@ class Header extends HTMLElement {
                     </div>
                     <div class="logo-secondary">
                         <a class="tab-link" href="index.html">
-                            <svg version="1.1" id="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40" viewBox="0 0 1634.3589 1621.8223" enable-background="new 0 0 1634.3589 1621.8223" xml:space="preserve">
+                            <svg version="1.1" id="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60" height="60" viewBox="0 0 1634.3589 1621.8223" enable-background="new 0 0 1634.3589 1621.8223" xml:space="preserve">
                                 <g>
                                     <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M43.3653,815.9111"/>
                                     <polygon fill="currentcolor" points="41.8891,542.9337 546.9691,542.9337 546.9691,35.5902 1085.278,35.5902 1085.278,542.9596 1592.8286,542.9596 1592.8286,1079.3282 1089.236,1079.3282 1089.236,1586.2321 549.0645,1586.2321 549.0645,1079.5869 41.902,1079.5869"/>
@@ -119,9 +117,35 @@ class Header extends HTMLElement {
                                 </a>
                             </div>
                         </div>
+                        <div class="menu">
+                            <a id="menu" href="javascript:void(0);" onclick="handleOpenMenu()"><img src="images/site/menu.svg" alt="Menu" height="32" width="32"></a>
+                       </div>
                     </div>
                 </nav>
             </header>
+        `;
+    }
+}
+
+class Menu extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+            <div id="menu-nav">
+                <div class="close-menu">
+                    <a href="javascript:void(0);" onclick="handleCloseMenu()" id="close-nav">
+                        <img src="images/site/close-circle.svg" alt="Menu" height="32" width="32">
+                    </a>
+                </div>
+                <a href="index.html" class="tab-link pb-10">HOME</a>
+                <a href="appointments.html" class="tab-link pb-10">APPOINTMENTS</a>
+                <a href="insurance.html" class="tab-link pb-10">INSURANCE</a>
+                <a href="office-team.html" class="tab-link pb-10">OFFICE TEAM</a>
+                <a href="our-policies.html" class="tab-link">OUR POLICIES</a>
+            </div>
         `;
     }
 }
@@ -219,4 +243,5 @@ class Footer extends HTMLElement {
 }
 
 customElements.define('main-header', Header);
+customElements.define('menu-nav', Menu);
 customElements.define('main-footer', Footer);
