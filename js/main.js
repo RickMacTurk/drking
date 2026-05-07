@@ -7,11 +7,35 @@ function handlePayments() {
 }
 
 function handleOpenMenu() {
-    document.getElementById('menu-nav').style.display = "block";
+    const menu = document.getElementById('menu-nav');
+
+    if (menu) {
+        menu.style.display = "block";
+    } else {
+        const newDiv = document.createElement('div');
+
+        newDiv.id = 'menu-nav';
+        newDiv.innerHTML = `
+            <div class="close-menu">
+                <a href="javascript:void(0);" id="close-nav">
+                    <img src="images/site/close-circle.svg" alt="Menu" height="32" width="32">
+                </a>
+            </div>
+            <a href="index.html" class="tab-link pb-10">HOME</a>
+            <a href="appointments.html" class="tab-link pb-10">APPOINTMENTS</a>
+            <a href="insurance.html" class="tab-link pb-10">INSURANCE</a>
+            <a href="office-team.html" class="tab-link pb-10">OFFICE TEAM</a>
+            <a href="our-policies.html" class="tab-link">OUR POLICIES</a>`;
+        newDiv.addEventListener("click", handleCloseMenu)
+    }
 }
 
 function handleCloseMenu() {
-    document.getElementById('menu-nav').style.display = "none";
+    const menu = document.getElementById('menu-nav');
+
+    if (menu) {
+        menu.style.display = "none";
+    }
 }
 
 class Header extends HTMLElement {
@@ -163,6 +187,7 @@ class Footer extends HTMLElement {
                         <div class="resource">
                             <div class="resources-heading">New Patient Info</div>
                             <div class="resources-item"><a href="pdf/newpatient.pdf" target="_blank">Registration Form</a></div>
+                            <div class="resources-item"><a href="pdf/officepolicies.pdf" target="_blank">Office Policies</a></div>
                             <div class="resources-item"><a href="pdf/wellnessform.pdf" target="_blank">Wellness Form</a></div>
                             <div class="resources-item"><a href="pdf/medicalhistory.pdf" target="_blank">Medical History </a></div>
                             <div class="resources-item"><a href="pdf/patientfinancial.pdf" target="_blank">Financial Form</a></div>
